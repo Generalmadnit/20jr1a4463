@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Home from "./Home";
 import Login from "./components/Login";
 import TrainSchedule from "./components/TrainSchedule";
 import "./Style/App.css";
@@ -19,20 +18,29 @@ function App() {
   }, []);
 
   return (
+    <>
     <div className="App">
-      <Home />
-      <TrainSchedule trains={trains} loading={loading} />
-      <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/schedule">Schedule</a></li>
-          <li><a href="/stations">Stations</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/Register">Register</a></li>
-          <li><a href="/login">Login</a></li>
+      <TrainSchedule trains={trains} loading={loading} /><br/>
+      <center>
+      
+          <a href="/">Home</a> &ensp;
+          <a href="/schedule">Schedule</a> &ensp;
+          <a href="/stations">Stations</a> &ensp;
+          <a href="/about">About</a> &ensp;
+          <a href="/Register">Register</a> &ensp;
+          <a href="/login">Login</a> &ensp;
 
-        </ul>
-
+      </center>
+      <br></br>
+      <Login/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <center><footer>&#169;General Madnit &#174; with Afford Train schedules</footer> </center>
     </div>
+        </>
   );
 }
 

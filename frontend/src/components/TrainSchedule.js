@@ -13,6 +13,7 @@ function TrainSchedule() {
   return (
     <div>
       <h1>Train Schedule</h1>
+      <h4>Welcome to 20JR1A4463 Train schedule app</h4>
       <table>
         <thead>
           <tr>
